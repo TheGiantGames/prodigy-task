@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    
+}
+
+html{
+    background: -webkit-linear-gradient(135deg ,#8df2c6 ,  rgb(112, 100, 204) , #8df2c6 ) ;
+   background-attachment: fixed;
+    
+}
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo{
+    height: 55px;
+    width: 55px;
+    margin-left: 16px;
+    transition: trans;
+}
+
+.nav-logo:hover{
+    transform: scale(1.1);
+}
+
+
+.logo{
+    background-image: url(assets/img/logo.png);
+    height: 55px;
+    width: 55px;
+}
+
+
+.nav-text-prodigy{
+    color: aliceblue;
+    align-self: center;
+    font-size: 30px;
+    margin-left: 16px;
+}
+
+.gradient-transition:hover{
+    background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.underline-transition{
+    position: relative;
+    cursor: pointer;
+}
+
+.underline-transition::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: aliceblue;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.underline-transition:hover::after{
+    transform: scaleX(1);
+}
+
+.nav-text-about{
+    color: aliceblue;
+    position: absolute;
+    right: 130px;
+    
+    
+}
+
+.nav-text-posts{
+    color: aliceblue;
+    position: absolute;
+    right: 35px;
+}
+
+.initial-view{
+    height: 80vh;
+    background-size: cover;
+    background-image: url(/assets/img/industry.jpg);
+    text-align: end;
+align-items: center;
+}
+
+
+
+.text-ideate{
+    font-size: 150px;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.text-innovate{
+    font-size: 150px;
+    color: rgb(212, 241, 124);
+    font-weight: bold;
+    margin-right: 20px;
+
+}
+.text-inspire{
+    font-size: 150px;
+    color: aqua;
+    font-weight: bold;
+    margin-right: 20px;
+
+}
+
+.about{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 36px;
+}
+
+.about .text-about{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about .desc{
+    color: aliceblue;
+}
+
+.events{
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.event1{
+    background-image: url(assets/img/event1.jpg);
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+}
+
+.event2{
+    background-image: url(assets/img/event2.jpg);
+    height: 350px;
+    width: 350px;
+    margin-left: 100px;
+    background-size: cover;
+}
+
+.event3{
+    background-image: url(assets/img/event3.jpg);
+    height: 350px;
+    width: 350px;
+    margin-left: 100px;
+    background-size: cover;
+}
+
+.event1:hover{
+    transform: scale(1.1);
+}
+
+.event2:hover{
+    transform: scale(1.1);
+}
+
+.event3:hover{
+    transform: scale(1.1);
+}
+
+.posts{
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.post1{
+    background-image: url(assets/img/post1.jpeg);
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    color: aliceblue;
+}
+
+
+.post2{
+    background-image: url(assets/img/post2.jpeg);
+    height: 350px;
+    width: 350px;
+    margin-left: 100px;
+    background-size: cover;
+}
+
+.post3{
+    background-image: url(assets/img/post3.jpeg);
+    height: 350px;
+    width: 350px;
+    margin-left: 100px;
+    background-size: cover;
+}
+
+.post1:hover{
+    transform: scale(1.1);
+}
+
+.post2:hover{
+    transform: scale(1.1);
+}
+
+.post3:hover{
+    transform: scale(1.1);
+}
+
+.posts{
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.text-posts{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 36px;
+}
+
+.connect-text{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top: 36px;
+    font-size: 20px;
+    width: max-content;
+    font-weight: bold;
+}
+
+.address-text{
+    margin-left: 100px;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
